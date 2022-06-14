@@ -1,9 +1,12 @@
 body {
     background-color: #fffbf7;
+    max-width: 50%;
+    border: solid;
 }
+
 h1 {    
-    color: #025157
-    text-align: center
+    color: #025157;
+    text-align: center;
 
 }
 
