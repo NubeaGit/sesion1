@@ -1,13 +1,15 @@
 body {
     background-color: #fffbf7;
-    max-width: 100%;
+    /*max-width: 100%;
     border: solid;
+    */
 }
 
 
 h1 {    
     color: #025157;
     text-align: center;
+    /* font-family: ; */
 
 }
 
@@ -22,11 +24,15 @@ button {
     background-color: #025157;
 }
 
-.header{    
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+.header {  
+    /* margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px; 
+  SE REALIZO TODO EN UN RENGLÓN*/  
+    margin: 40px 20px 0;
     font-size: 0;
+    /* height: 45px;
+    font-family: sans-serif; */
 }
 
 li { 
@@ -52,14 +58,52 @@ li {
 
 .navbar {   
     width: 70%;
-    text-align: center;
+    text-align: left;
     color: #025157;
     font-weight: 500;
+    font-family: sans-serif;
+    height: 45px;
+    margin: 25px ;
+    color: #025157;
 }
+
 
 .actions {  
     width: 15%;
-    text-align: right;
+    text-align: left;
     font-size: 14px;
     font-weight: 600;
+    margin: 10px;
+    
+}
+
+.actions > * {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.actions a { 
+    color: #67b54b;
+}
+
+.actions button { 
+    color: rgb(255, 255, 255); 
+    background-color: #67b54b ;
+    padding: 12px 14px; 
+    border-style: none;
+    border-radius: 5px;
+    
+}
+
+
+/* Todos los textos dentro de la barra de navegación deben usar la fuente sans-serif y el alto de la barra debe ser de 45px.
+El texto del menú de navegación debe tener una separación a los costados de 25px, además debe ser del color #025157.
+El tamaño de fuente para las acciones debe ser de 14px y cada una de las acciones debe tener una separación hacia los 
+lados de 10px. El color del texto Sign In debe ser #67b54b y el botón de Start free trial debe tener color de texto 
+blanco, color de fondo #67b54b, un relleno de 14px hacia los costados y 12px en la parte inferior y superior. 
+Por último el botón no debe tener borde, pero un radio de borde de 5px para tener esquinas redondeadas. */
+
+.main { 
+    margin-top: 140px;
+    text-align: center;
 }
