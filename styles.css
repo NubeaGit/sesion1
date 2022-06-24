@@ -10,7 +10,7 @@ h1 {
     color: #025157;
     text-align: center;
     font-family: 'Alegreya', serif;
-
+    font-size: 60px;
 
 }
 
@@ -175,13 +175,13 @@ Por último el botón no debe tener borde, pero un radio de borde de 5px para te
 }
 
 
- iframe {   
+iframe {
 
     display: flex;
     margin: auto;
- }
+}
 
- 
+
 .explanatory-video {
     display: flex;
     flex-direction: column;
@@ -202,10 +202,10 @@ Por último el botón no debe tener borde, pero un radio de borde de 5px para te
     /* height: 660px; */
     /* grid-template-rows: repeat(2, 1fr); */
     grid-template: repeat(2, 330px) / repeat(2, 1fr);
-  }
-  
+}
 
-  .features .feature-card {
+
+.features .feature-card {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -214,7 +214,8 @@ Por último el botón no debe tener borde, pero un radio de borde de 5px para te
     border-radius: 5px;
     display: flex;
     align-items: center;
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 
 .features .feature-card .feature-content {
@@ -258,8 +259,62 @@ features .feature-card .feature-image {
     height: 80%;
 }
 
-.features .feature-card .feature-image figure, 
+.features .feature-card .feature-image figure,
 .features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
+}
+
+@media (max-width: 575px) {
+
+
+
+    /* .navbar,
+    .actions {
+        display: none;
+    } */
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        margin-top: 130px;
+    }
+
+    .features{
+
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+
+    
+    }
+    
+    .feature-image {
+        display: none;
+        
+
+    }
+
+
+    
+    .publish > form {
+        flex-direction: column;
+      }
+      
+    .publish> form> div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish> form> div>input {
+        width: 65%;
+    }
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+
 }
